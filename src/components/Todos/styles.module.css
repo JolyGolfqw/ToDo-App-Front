@@ -1,0 +1,17 @@
+ .loader {
+    padding-top: 30px;
+ text-align: center;
+ }
+
+ .error {
+     text-align: center;
+     color: red;
+     font-weight: 500;
+ }
+
+ .emptyData {
+     text-align: center;
+     font-weight: 500;
+ }
+
+ 

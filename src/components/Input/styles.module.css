@@ -1,0 +1,29 @@
+.form {
+  border: 3px solid #0d6efd;
+  border-color: #0d6efd;
+  width: 80% !important;
+  border-radius: 8px;
+  align-items: center;
+  margin: auto;
+  height: 60px;
+}
+
+.inputGroup {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.inputGroup .btn {
+  width: 60px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
