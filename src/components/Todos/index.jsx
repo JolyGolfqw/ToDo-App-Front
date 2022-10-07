@@ -82,9 +82,9 @@ function Todos() {
           )
         );
       })}
-      <Pagination todosPerPage={todosPerPage} totalTodo={todos.length} paginate={paginate}/>
+      {/* <Pagination todosPerPage={todosPerPage} totalTodo={todos.length} paginate={paginate}/>
       <button className="btn btn-primary" onClick={prevPage}>Prev Page</button>
-      <button className="btn btn-primary ms-2" onClick={nextPage}>Next Page</button>
+      <button className="btn btn-primary ms-2" onClick={nextPage}>Next Page</button> */}
 
     </div>
   );
