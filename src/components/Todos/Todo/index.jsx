@@ -3,11 +3,11 @@ import Checkbox from "@material-ui/core/Checkbox";
 import CircleChecked from "@material-ui/icons/CheckCircleOutline";
 import CircleUnchecked from "@material-ui/icons/RadioButtonUnchecked";
 import { useDispatch } from "react-redux";
-import { makeCompleted, deleteTodo } from "../../../redux/features/todos";
+import { makeCompleted, deleteTodo, changeTodos, deleteTodos } from "../../../redux/features/todos";
 import styles from "./styles.module.css";
 import PropTypes from "prop-types";
 
-function Todo({ text, done, id, deleting }) {
+function Todo({ text, done, id, deleting,  todo }) {
   const dispatch = useDispatch();
 
   Todo.propTypes = {
@@ -17,12 +17,12 @@ function Todo({ text, done, id, deleting }) {
   };
 
   const handleChecked = () => {
-    console.log(id);
-    dispatch(makeCompleted(id, done));
+    dispatch(changeTodos(todo));
+    console.log(todo);
   };
 
   const handleDelete = (id) => {
-    dispatch(deleteTodo(id));
+    dispatch(deleteTodos(id));
     console.log(deleting);
   };
 

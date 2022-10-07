@@ -5,6 +5,7 @@ import Todos from "./Todos";
 
 
 const App = () => {
+  console.log(process.env)
   return (
       <div className="app">
         <Input/>

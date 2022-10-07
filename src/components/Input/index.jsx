@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { InputGroup, Button, FormControl } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../../redux/features/todos";
+import { addTodo, addTodos } from "../../redux/features/todos";
 import styles from "./styles.module.css";
 
 function Input() {
@@ -19,7 +19,7 @@ function Input() {
       return alert("Поле ввода не должно быть пустым");
     }
     setText("");
-    dispatch(addTodo(text));
+    dispatch(addTodos(text));
   };
 
   return (
