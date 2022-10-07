@@ -53,7 +53,7 @@ function Todos() {
 
   return (
     <div>
-      {currentTodo.map((todo) => {
+      {todos.map((todo) => {
         return (
           !todo.completed && (
             <Todo
@@ -68,7 +68,7 @@ function Todos() {
         );
       })}
       <hr />
-      {currentTodo.map((todo) => {
+      {todos.map((todo) => {
         return (
           todo.completed && (
             <Todo
